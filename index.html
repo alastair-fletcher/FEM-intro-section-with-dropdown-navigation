@@ -1,39 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./index.js" defer></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <main>
+      <div class="side-nav hide">
+        <img
+          class="close-button"
+          src="/images/icon-close-menu.svg"
+          alt="close-button"
+        />
+        <!-- Features -->
+        <div class="sidenav__item">
+          <span>Features</span>
+          <img
+            class="toggle-drop-down"
+            src="/images/icon-arrow-down.svg"
+            alt="toggle-menu"
+          />
+        </div>
+        <!-- ------ dropdown -->
+        <div class="side-nav-drop-down hideDropDown">
+          <p>
+            <span><img src="./images/icon-todo.svg" alt="todo" /></span>Todo
+            List
+          </p>
+          <p>
+            <span><img src="./images/icon-calendar.svg" alt="calendar" /></span
+            >Calendar
+          </p>
+          <p>
+            <span
+              ><img src="./images/icon-reminders.svg" alt="reminders" /></span
+            >Reminders
+          </p>
+          <p>
+            <span><img src="./images/icon-planning.svg" alt="planning" /></span
+            >Planning
+          </p>
+        </div>
+        <!-- Company -->
+        <div class="sidenav__item">
+          <span>Company</span>
+          <img
+            class="toggle-drop-down"
+            src="/images/icon-arrow-down.svg"
+            alt="toggle-menu"
+          />
+        </div>
+        <!-- ------ dropdown -->
+        <div class="side-nav-drop-down hideDropDown">
+          <p>History</p>
+          <p>Our team</p>
+          <p>Blog</p>
+        </div>
+        <!-- Careers -->
+        <div class="sidenav__item"><span>Careers</span></div>
+        <!-- About -->
+        <div class="sidenav__item"><span>About</span></div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+        <button id="login-btn">Login</button>
+        <button>Register</button>
+      </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <div class="modal hide"></div>
 
-  Features
-  Company
-  Careers
-  About
+      <nav>
+        <img src="/images/logo.svg" alt="logo" />
+        <div class="desktop__nav--menu">
+          <!-- Features -->
+          <div class="sidenav__item">
+            <span>Features</span>
+            <img
+              class="toggle-drop-features-down"
+              src="/images/icon-arrow-down.svg"
+              alt="toggle"
+            />
+          </div>
+          <!-- ------ dropdown -->
+          <div class="side-nav-drop-down hideDropDown">
+            <p>
+              <span><img src="./images/icon-todo.svg" alt="todo" /></span>Todo
+              List
+            </p>
+            <p>
+              <span
+                ><img src="./images/icon-calendar.svg" alt="calendar" /></span
+              >Calendar
+            </p>
+            <p>
+              <span
+                ><img src="./images/icon-reminders.svg" alt="reminders" /></span
+              >Reminders
+            </p>
+            <p>
+              <span
+                ><img src="./images/icon-planning.svg" alt="planning" /></span
+              >Planning
+            </p>
+          </div>
+          <!-- Company -->
+          <div class="sidenav__item">
+            <span>Company</span>
+            <img
+              class="toggle-company-drop-down"
+              src="/images/icon-arrow-down.svg"
+              alt=""
+            />
+          </div>
+          <!-- ------ dropdown -->
+          <div class="side-nav-drop-down hideDropDown">
+            <p>History</p>
+            <p>Our team</p>
+            <p>Blog</p>
+          </div>
+          <!-- Careers -->
+          <div class="sidenav__item"><span>Careers</span></div>
+          <!-- About -->
+          <div class="sidenav__item"><span>About</span></div>
 
-  Login
-  Register
+          <button id="login-btn--desktop">Login</button>
+          <button>Register</button>
+        </div>
+        <img class="hamburger" src="/images/icon-menu.svg" alt="menu" />
+      </nav>
 
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <section>
+        <img
+          class="hero-image"
+          src="./images/image-hero-mobile.png"
+          alt="hero-mobile"
+        />
+        <article>
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+          <div class="sponsors">
+            <img src="./images/client-databiz.svg" alt="databiz" />
+            <img src="./images/client-audiophile.svg" alt="audiophile" />
+            <img src="./images/client-meet.svg" alt="meet" />
+            <img src="./images/client-maker.svg" alt="maker" />
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
