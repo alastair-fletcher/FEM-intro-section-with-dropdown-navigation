@@ -3,8 +3,10 @@ const hamburger = document.querySelector('.hamburger');
 const closeButton = document.querySelector('.close-button');
 const sideNav = document.querySelector('.side-nav');
 const modal = document.querySelector('.modal');
-const sideNavDropDowns = document.querySelectorAll('.side-nav-drop-down');
+const sideNavDropDowns = document.querySelectorAll('.side-nav__drop-down');
 const toggleDropDownMenus = document.querySelectorAll('.toggle-drop-down');
+
+console.log(toggleDropDownMenus);
 
 function toggleMobileMenu() {
   sideNav.classList.toggle('hide');

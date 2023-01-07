@@ -28,7 +28,7 @@
           alt="close-button"
         />
         <!-- Features -->
-        <div class="sidenav__item">
+        <div class="side-nav__link">
           <span>Features</span>
           <img
             class="toggle-drop-down"
@@ -37,7 +37,7 @@
           />
         </div>
         <!-- ------ dropdown -->
-        <div class="side-nav-drop-down hideDropDown">
+        <div class="side-nav__drop-down hideDropDown">
           <p>
             <span><img src="./images/icon-todo.svg" alt="todo" /></span>Todo
             List
@@ -57,7 +57,7 @@
           </p>
         </div>
         <!-- Company -->
-        <div class="sidenav__item">
+        <div class="side-nav__link">
           <span>Company</span>
           <img
             class="toggle-drop-down"
@@ -66,15 +66,15 @@
           />
         </div>
         <!-- ------ dropdown -->
-        <div class="side-nav-drop-down hideDropDown">
+        <div class="side-nav__drop-down hideDropDown">
           <p>History</p>
           <p>Our team</p>
           <p>Blog</p>
         </div>
         <!-- Careers -->
-        <div class="sidenav__item"><span>Careers</span></div>
+        <div class="side-nav__link"><span>Careers</span></div>
         <!-- About -->
-        <div class="sidenav__item"><span>About</span></div>
+        <div class="side-nav__link"><span>About</span></div>
 
         <button id="login-btn">Login</button>
         <button>Register</button>
@@ -85,59 +85,82 @@
       <nav>
         <img src="/images/logo.svg" alt="logo" />
         <div class="desktop__nav--menu">
-          <!-- Features -->
-          <div class="sidenav__item">
-            <span>Features</span>
-            <img
-              class="toggle-drop-features-down"
-              src="/images/icon-arrow-down.svg"
-              alt="toggle"
-            />
+          <div class="nav__links">
+            <!-- Features -->
+            <div class="drop-down-container">
+              <div class="side-nav__link">
+                <span>Features</span>
+                <img
+                  class="toggle-drop-down"
+                  src="/images/icon-arrow-down.svg"
+                  alt="toggle"
+                />
+              </div>
+              <!-- ------ dropdown -->
+              <div
+                id="features-drop-down"
+                class="side-nav__drop-down hideDropDown"
+              >
+                <p>
+                  <span><img src="./images/icon-todo.svg" alt="todo" /></span
+                  >Todo List
+                </p>
+                <p>
+                  <span
+                    ><img
+                      src="./images/icon-calendar.svg"
+                      alt="calendar" /></span
+                  >Calendar
+                </p>
+                <p>
+                  <span
+                    ><img
+                      src="./images/icon-reminders.svg"
+                      alt="reminders" /></span
+                  >Reminders
+                </p>
+                <p>
+                  <span
+                    ><img
+                      src="./images/icon-planning.svg"
+                      alt="planning" /></span
+                  >Planning
+                </p>
+              </div>
+            </div>
+            <!-- Company -->
+            <div class="drop-down-container">
+              <div class="side-nav__link">
+                <span>Company</span>
+                <img
+                  class="toggle-drop-down"
+                  src="/images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <!-- ------ dropdown -->
+              <div
+                id="company-drop-down"
+                class="side-nav__drop-down hideDropDown"
+              >
+                <p>History</p>
+                <p>Our team</p>
+                <p>Blog</p>
+              </div>
+            </div>
+            <!-- Careers -->
+            <div class="drop-down-container">
+              <div class="side-nav__link"><span>Careers</span></div>
+            </div>
+            <!-- About -->
+            <div class="drop-down-container">
+              <div class="side-nav__link"><span>About</span></div>
+            </div>
           </div>
-          <!-- ------ dropdown -->
-          <div class="side-nav-drop-down hideDropDown">
-            <p>
-              <span><img src="./images/icon-todo.svg" alt="todo" /></span>Todo
-              List
-            </p>
-            <p>
-              <span
-                ><img src="./images/icon-calendar.svg" alt="calendar" /></span
-              >Calendar
-            </p>
-            <p>
-              <span
-                ><img src="./images/icon-reminders.svg" alt="reminders" /></span
-              >Reminders
-            </p>
-            <p>
-              <span
-                ><img src="./images/icon-planning.svg" alt="planning" /></span
-              >Planning
-            </p>
+          <div class="nav__buttons">
+            <button id="login-btn--desktop">Login</button>
+            <button>Register</button>
           </div>
-          <!-- Company -->
-          <div class="sidenav__item">
-            <span>Company</span>
-            <img
-              class="toggle-company-drop-down"
-              src="/images/icon-arrow-down.svg"
-              alt=""
-            />
-          </div>
-          <!-- ------ dropdown -->
-          <div class="side-nav-drop-down hideDropDown">
-            <p>History</p>
-            <p>Our team</p>
-            <p>Blog</p>
-          </div>
-          <!-- Careers -->
-          <div class="sidenav__item"><span>Careers</span></div>
-          <!-- About -->
-          <div class="sidenav__item"><span>About</span></div>
-
-          <button id="login-btn--desktop">Login</button>
-          <button>Register</button>
         </div>
         <img class="hamburger" src="/images/icon-menu.svg" alt="menu" />
       </nav>
